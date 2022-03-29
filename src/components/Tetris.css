@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(270deg, #e66465, #9198e5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tetris-container {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    outline: 30px solid #161829;
+}
+.tetris-container div {
+    background: linear-gradient(45deg, #312b2b, #161829);
+    width: 50px;
+    height: 50px;
+}
+.tetris-container div.filled {
+    border: solid 5px #fff;
+    border-left: solid 5px #ebdfdf;
+    border-right: solid 5px #a9acce;
+    border-bottom: solid 5px #6d7191;
+    background: linear-gradient(170deg, #ebdfdf, #bbbfe6);
+}
